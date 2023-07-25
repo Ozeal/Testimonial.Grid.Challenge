@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border-radius: 5px;
+    font-family: 'Epilogue', sans-serif;
+}
+
+body{
+    background-color: aquamarine;
+}
+
+#main{
+  overflow: hidden;
+  padding: 5% 3%;
+}
+
+
+#grid{
+    margin: 0px;
+    padding: 0px;
+    
+}
+
+.grid_item{
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 3px 4px 8px 0px rgba(0,0,0,0.35);
+}
+
+#main img{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 10px;
+    border: 2.5px solid  aquamarine;
+}
+
+#main p{
+    font-weight: 500;
+    opacity: 70%;
+}
+
+#main h4{
+    font-weight: 700;
+}
+.header{
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#header_txt{
+    font-size: 13px;
+}
+
+#header_txt .name{
+    opacity: 100%;
+    font-size: 1rem;
+}
+
+#main h4{
+    margin-bottom: 20px;
+    font-size: 1.2rem;
+}
+#testimonial_1 {
+    background-color: #7141c8;
+    color: #ffffff;
+}
+
+#testimonial_2{
+    background-color:#19212e ;
+    color: #ffffff;
+}
+#testimonial_3{
+    background-color:  #ffffff;
+}
+#testimonial_4{
+    background-color:  #48556a;
+    color: #ffffff;
+}
+#testimonial_5{
+    background-color: #ffffff;
+}
+
+#testimonial_5 img, #testimonial_3 img{
+    border: 2.5px solid  aquamarine;
+}
+
+@media (min-width: 567px){
+    #main{
+        justify-content: space-between;
+        max-width: 1300px;
+        margin: 0px auto;
+    }
+
+    #grid{
+        margin-right: 5px;
+        
+    }
+
+    #grid, .grid_item{
+        margin-left: 15px;
+    }
+
+    #upper_div, #main, #lower_div{
+        display: flex;
+    }
+
+    #upper_div{
+        flex-basis: 50%;
+        /* justify-content: space-between; */
+    }
+
+    #lower_div{
+        display: flex;
+        flex-basis: 50%;
+        /* justify-content: space-between; */
+    }
+    
+
+    #testimonial_1, #testimonial_4, #grid{
+        flex-basis: 70%;
+    }
+
+    #testimonial_2, #testimonial_3, #testimonial_5{
+        flex-basis: 28%;
+    }
+}
