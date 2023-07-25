@@ -57,6 +57,7 @@ body{
 #header_txt .name{
     opacity: 100%;
     font-size: 1rem;
+    margin-bottom: 5px;
 }
 
 #main h4{
